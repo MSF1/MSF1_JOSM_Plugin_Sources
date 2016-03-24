@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+** This is a template build file for a JOSM  plugin.
+**
+** Maintaining versions
+** ====================
+** See README.template
+**
+** Usage
+** =====
+** Call "ant help" to get possible build targets.
+**
+-->
+<project name="msf1" default="dist" basedir=".">
+
+    <!-- enter the SVN commit message -->
+    <property name="Beta0" value="Intial testing of MSF1"/>
+    <!-- enter the *lowest* JOSM version this plugin is currently compatible with -->
+    <property name="plugin.main.version" value="7001"/>
+
+    <!-- Configure these properties (replace "..." accordingly).
+         See https://josm.openstreetmap.de/wiki/DevelopersGuide/DevelopingPlugins
+    -->
+    <property name="plugin.author" value="MSF1"/>
+    <property name="plugin.class" value="msf1.Msf1Plugin"/>
+    <property name="plugin.description" value="Directly importing xlx/xlsx files into JOSM"/>
+    <property name="plugin.icon" value="..."/>
+    <property name="plugin.link" value="..."/>
+    <!--<property name="plugin.early" value="..."/>-->
+    <property name="plugin.requires" value="apache-commons"/>
+    <!--<property name="plugin.stage" value="..."/>-->
+
+    <!-- ** include targets that all plugins have in common ** -->
+    <import file="../build-common.xml"/>
+  
+</project>
